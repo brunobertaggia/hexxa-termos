@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hexxa · Termos de Serviço</title>
+<meta name="description" content="Termos de Serviço de Locação de IPv4, Política de Uso Aceitável e Política de Privacidade · versão 1.0">
+<style>
+:root{--bg:#ffffff;--fg:#1d2433;--muted:#5b6475;--line:#e3e6ec;--accent:#0b5cad;--soft:#f5f7fa}
+@media (prefers-color-scheme: dark){:root{--bg:#12151b;--fg:#e6e9ef;--muted:#a3abba;--line:#2a303b;--accent:#6aa9ff;--soft:#1a1f27}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+header,main,footer{max-width:820px;margin:0 auto;padding:0 16px}
+header{padding-top:28px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.marca{font-weight:700;font-size:20px;letter-spacing:.2px}
+.sub{color:var(--muted);font-size:14px;margin:2px 0 10px}
+nav{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;margin:10px 0 6px}
+nav a{color:var(--accent);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.idioma{font-size:14px;margin:0 0 12px}
+.idioma a{color:var(--accent)}
+h2{font-size:26px;line-height:1.25;margin:44px 0 6px;padding-top:12px;border-top:3px solid var(--fg)}
+h3{font-size:19px;margin:30px 0 8px}
+h4{font-size:16px;margin:22px 0 6px}
+p{margin:10px 0}
+ul{margin:6px 0 10px;padding-left:22px}
+li{margin:3px 0}
+a{color:var(--accent)}
+hr{border:0;border-top:1px dashed var(--line);margin:36px 0}
+blockquote{margin:12px 0;padding:8px 14px;background:var(--soft);border-left:3px solid var(--accent);color:var(--muted)}
+blockquote p{margin:4px 0}
+.tabela{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:56px;padding-top:14px;padding-bottom:40px}
+@media print{nav,.idioma{display:none}h2{break-before:page}}
+</style>
+</head>
+<body>
+<header>
+<div class="marca">Hexxa</div>
+<div class="sub">Termos de Serviço de Locação de IPv4, Política de Uso Aceitável e Política de Privacidade · versão 1.0</div>
+<nav><a href="#termos">Termos de Serviço</a> <a href="#aup">Uso Aceitável (AUP)</a> <a href="#privacidade">Privacidade</a> <a href="intermediacao.html">Intermediação (donos de bloco)</a></nav>
+<p class="idioma"><a href="en/">English version</a></p>
+</header>
+<main>
+<section><h2 id="termos">Termos de Serviço de Locação de Endereços IPv4</h2>
+<p><strong>HEXXA LTDA</strong> · Versão 1.0 · Vigente desde 28/10/2026</p>
+<p>Ao marcar "Li e aceito" no checkout, a pessoa jurídica identificada na Ordem de Serviço ("<strong>Cliente</strong>"), por meio do seu representante, celebra estes Termos com a <strong>HEXXA LTDA</strong>, CNPJ 63.048.597/0001-64, com sede na Rua Pais Leme, 215, conj. 1713, Pinheiros, São Paulo/SP, CEP 05424-150, site hexxacrm.com, e-mail <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a> ("<strong>Hexxa</strong>").</p>
+<p>Estes Termos, a Política de Uso Aceitável ("<strong>AUP</strong>") e cada Ordem de Serviço ("<strong>OS</strong>", modelo no Anexo I) formam um único contrato ("<strong>Contrato</strong>").</p>
+<h3 id="termos-1-definições">1. Definições</h3>
+<p>1.1 <strong>Bloco</strong>: conjunto de endereços IPv4, de /24 a /22, informado no Kit de Entrega e vinculado a uma OS.</p>
+<p>1.2 <strong>Titular</strong>: organização registrada no RIR como detentora do Bloco.</p>
+<p>1.3 <strong>Fornecedor</strong>: empresa da qual a Hexxa obtém o direito de uso do Bloco (plataforma, locador ou o próprio Titular).</p>
+<p>1.4 <strong>RIR</strong>: registro regional de internet responsável pelo Bloco (ARIN, RIPE NCC, APNIC ou outro).</p>
+<p>1.5 <strong>ASN Autorizado</strong>: número de sistema autônomo do Cliente indicado na OS, o único autorizado a originar o Bloco.</p>
+<p>1.6 <strong>LOA</strong>: carta de autorização, emitida pelo Titular ou pelo Fornecedor, que permite ao ASN Autorizado anunciar o Bloco.</p>
+<p>1.7 <strong>ROA</strong>: autorização de origem de rota publicada no RPKI do RIR. <strong>ROA AS0</strong> é o ROA que declara que nenhum ASN pode originar o Bloco.</p>
+<p>1.8 <strong>Registros do Bloco</strong>: ROA, objeto de rota em base IRR, registro WHOIS/RDAP, delegação de DNS reverso e geofeed relativos ao Bloco.</p>
+<p>1.9 <strong>Kit de Entrega</strong>: LOA, dados do Bloco, Registros do Bloco e instruções enviados ao Cliente.</p>
+<p>1.10 <strong>Data de Entrega</strong>: data em que a Hexxa envia o Kit de Entrega com o ROA do ASN Autorizado já publicado.</p>
+<p>1.11 <strong>Ciclo</strong>: período de faturamento contratado na OS (mensal, trimestral, semestral ou anual).</p>
+<p>1.12 <strong>Suspensão Técnica</strong>: retirada da autorização de anúncio, por publicação de ROA AS0, remoção do ROA do ASN Autorizado e/ou revogação da LOA, com aviso aos upstreams do Cliente quando necessário.</p>
+<p>1.13 <strong>Prazo de Retirada</strong>: prazo para o Cliente parar de anunciar o Bloco após o término, de 3 dias corridos, salvo outro prazo na OS.</p>
+<h3 id="termos-2-objeto-e-natureza-do-serviço">2. Objeto e natureza do serviço</h3>
+<p>2.1 Durante a vigência da OS, a Hexxa disponibiliza ao Cliente o direito exclusivo, intransferível e revogável nas hipóteses deste Contrato de anunciar o Bloco na internet pelo ASN Autorizado e de usar os endereços em sua rede ("<strong>Serviço</strong>").</p>
+<p>2.2 O Cliente reconhece que:</p>
+<ul><li>(a) endereços IP não são objeto de propriedade e estão sujeitos às políticas do RIR;</li><li>(b) a Hexxa <strong>não é Titular</strong> do Bloco e o obtém do Fornecedor;</li><li>(c) o Contrato não transfere titularidade nem registro do Bloco;</li><li>(d) "locação" é o termo usado pelo mercado; o Serviço consiste no direito de uso descrito na cláusula 2.1.</li></ul>
+<p>2.3 <strong>Contrato espelho.</strong> Os direitos da Hexxa perante o Cliente acompanham os direitos do Fornecedor e do Titular perante a Hexxa. Sempre que o Fornecedor, o Titular ou o RIR puderem suspender, limitar ou recolher o Bloco, a Hexxa poderá fazer o mesmo perante o Cliente, nos termos da cláusula 10. A AUP incorpora as exigências do Fornecedor sobre o uso do Bloco. Exigências adicionais específicas de um Bloco serão comunicadas por escrito e passam a integrar a OS.</p>
+<p>2.4 Não fazem parte do Serviço: trânsito IP, conectividade, upstream, equipamentos, configuração da rede do Cliente e garantia de que terceiros aceitarão o anúncio.</p>
+<h3 id="termos-3-contratação-e-aceite-eletrônico">3. Contratação e aceite eletrônico</h3>
+<p>3.1 A contratação segue estas etapas: proposta, verificação cadastral ("<strong>KYC</strong>"), aceite, pagamento e entrega.</p>
+<p>3.2 O Contrato se forma com o aceite eletrônico e produz efeitos com a confirmação do pagamento. As partes reconhecem o aceite eletrônico como manifestação válida de vontade e como meio de prova de autoria e integridade. A Hexxa registra data e hora, IP, e-mail do usuário, versão e cópia dos documentos aceitos, e envia cópia ao Cliente.</p>
+<p>3.3 Quem aceita declara ter poderes para obrigar o Cliente.</p>
+<p>3.4 A Hexxa pode recusar ou cancelar qualquer pedido antes da Entrega, inclusive em razão do resultado do KYC ou de falta de estoque. Nesse caso, devolve o valor pago em até 10 dias úteis, ressalvado o disposto na cláusula 16.</p>
+<h3 id="termos-4-informações-cadastrais-kyc">4. Informações cadastrais (KYC)</h3>
+<p>4.1 O Cliente fornecerá informações verdadeiras, completas e atualizadas, incluindo prova de controle do ASN Autorizado e um contato de abuso funcional. Alterações devem ser comunicadas em até 10 dias.</p>
+<p>4.2 A Hexxa pode repetir as verificações a qualquer tempo, inclusive na renovação, e pedir documentos adicionais em caso de alerta. A recusa em fornecê-los ou a informação falsa autorizam a suspensão e a rescisão imediata.</p>
+<p>4.3 O Cliente autoriza:</p>
+<ul><li>(a) o compartilhamento dos dados cadastrais necessários com o Fornecedor, o Titular e o RIR;</li><li>(b) a publicação, no WHOIS/RDAP do RIR, da sua razão social, cidade, país e contato de abuso, associados ao Bloco.</li></ul>
+<h3 id="termos-5-entrega-e-ativação">5. Entrega e ativação</h3>
+<p>5.1 Com o pagamento confirmado e o KYC aprovado, a Hexxa enviará o Kit de Entrega em até 3 dias úteis. Os prazos dependem também do Fornecedor e do RIR.</p>
+<p>5.2 O Kit de Entrega inclui, no mínimo: LOA, prefixo, ROA publicado para o ASN Autorizado, objeto de rota (quando aplicável), registro WHOIS e instruções de configuração e de geolocalização.</p>
+<p>5.3 Cabe ao Cliente configurar seus roteadores, atualizar seus filtros e objetos IRR (como o AS-SET) e obter a aceitação do anúncio pelos seus upstreams. A Hexxa pode apoiar com informações, sem responsabilidade pela rede do Cliente.</p>
+<p>5.4 Depois do anúncio, a Hexxa verifica a origem da rota, a validade RPKI, a presença em listas de bloqueio e a geolocalização, e confirma a ativação ao Cliente.</p>
+<p>5.5 Se a Hexxa não enviar o Kit de Entrega em até 10 dias úteis da confirmação do pagamento, por causa não atribuível ao Cliente, o Cliente pode cancelar a OS e receber de volta o valor integral pago.</p>
+<p>5.6 Mudança de ASN Autorizado, nova LOA, delegação de DNS reverso ou alteração de geolocalização depois da Entrega dependem de pedido por escrito e podem ter custo, informado antes da execução.</p>
+<h3 id="termos-6-obrigações-do-cliente">6. Obrigações do Cliente</h3>
+<p>6.1 O Cliente deve:</p>
+<ul><li>(a) originar o Bloco somente pelo ASN Autorizado, com anúncios compatíveis com o ROA;</li><li>(b) cumprir a AUP e a legislação aplicável, inclusive, quando for o caso, a guarda de registros de conexão prevista no Marco Civil da Internet (Lei 12.965/2014);</li><li>(c) manter um contato de abuso funcional e responder às denúncias nos prazos da AUP: confirmação em até 24 horas e solução ou resposta fundamentada em até 48 horas;</li><li>(d) não alterar nem tentar alterar os Registros do Bloco, salvo por meio da Hexxa;</li><li>(e) cooperar com a Hexxa, o Fornecedor, o Titular, o RIR e as autoridades em investigações de abuso;</li><li>(f) arcar com os custos de remoção de listas de bloqueio causadas por sua rede, seus clientes ou usuários;</li><li>(g) manter atualizados seus dados e seus contatos técnico, financeiro e de abuso.</li></ul>
+<p>6.2 <strong>Proibição de realuguel.</strong> O Cliente não pode, no todo ou em parte, sublocar, realugar, revender ou ceder o Bloco, sub-designá-lo a outra organização no WHOIS/RDAP nem permitir que outro ASN o anuncie. Não é violação atribuir endereços a usuários finais do próprio Cliente, como parte dos seus serviços de conectividade ou hospedagem, desde que o Bloco continue anunciado só pelo ASN Autorizado e o Cliente responda por todo o uso.</p>
+<p>6.3 Se o Bloco for de origem LACNIC, aplicam-se também as condições da política do LACNIC sobre sub-designação indicadas na OS.</p>
+<p>6.4 O Cliente responde pelo uso do Bloco por seus empregados, clientes e usuários.</p>
+<h3 id="termos-7-obrigações-da-hexxa">7. Obrigações da Hexxa</h3>
+<p>7.1 A Hexxa deve:</p>
+<ul><li>(a) enviar o Kit de Entrega nos prazos da cláusula 5;</li><li>(b) solicitar ao Fornecedor a publicação e a manutenção do ROA, do objeto de rota e do registro WHOIS durante a vigência;</li><li>(c) empregar esforço razoável para corrigir problemas de reputação e de geolocalização, conforme a cláusula 11;</li><li>(d) prestar suporte por <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a>, em dias úteis, das 9h às 18h (horário de Brasília);</li><li>(e) repassar ao Cliente, em até 24 horas do recebimento, avisos do Fornecedor, do Titular ou do RIR que o afetem.</li></ul>
+<h3 id="termos-8-preço-faturamento-e-pagamento">8. Preço, faturamento e pagamento</h3>
+<p>8.1 Preço, Ciclo, moeda e descontos constam da OS. O pagamento é <strong>sempre antecipado</strong>, por Ciclo, via Stripe (Pix, boleto ou cartão). Ciclos mais longos podem ter desconto, indicado na OS.</p>
+<p>8.2 <strong>Renovação automática.</strong> A OS se renova por Ciclo igual, salvo cancelamento conforme a cláusula 12.2.</p>
+<ul><li>Cartão: cobrança automática na data de renovação.</li><li>Pix e boleto: fatura enviada com pelo menos 7 dias de antecedência, com vencimento na data de renovação.</li></ul>
+<p>8.3 <strong>Clientes no Brasil: preço em BRL com reajuste cambial.</strong> O preço tem base em dólares dos EUA ("<strong>Preço Base</strong>"). O valor em reais de cada fatura é o Preço Base multiplicado pela taxa PTAX de venda do dólar dos EUA divulgada pelo Banco Central do Brasil no dia útil imediatamente anterior à emissão da fatura. Depois de emitida, a fatura não sofre nova conversão. Se a PTAX daquele dia não for divulgada, usa-se a última divulgada.</p>
+<p>8.4 <strong>Clientes no exterior: preço em USD.</strong> O preço e o pagamento são em dólares dos EUA. Tarifas bancárias, de conversão e tributos retidos na fonte correm por conta do Cliente, de modo que a Hexxa receba o valor integral da fatura.</p>
+<p>8.5 <strong>Tributos.</strong> Os preços já incluem os tributos incidentes. A Hexxa emitirá o documento fiscal cabível.</p>
+<p>8.6 <strong>Reajuste do Preço Base.</strong> A Hexxa pode reajustar o Preço Base com aviso de 30 dias, com efeito a partir do Ciclo seguinte. O Cliente pode cancelar antes da renovação, sem ônus.</p>
+<p>8.7 <strong>Atraso.</strong> Sobre valores em atraso incidem multa de 2%, juros de 1% ao mês pro rata die e correção pelo IPCA, sem prejuízo da Suspensão Técnica.</p>
+<p>8.8 <strong>Contestação.</strong> Cobranças devem ser contestadas por escrito em até 30 dias. Estorno (chargeback) sem fundamento equivale a inadimplência.</p>
+<h3 id="termos-9-inadimplência-e-suspensão-técnica">9. Inadimplência e Suspensão Técnica</h3>
+<p>9.1 Se a fatura não for paga no vencimento, a Hexxa enviará lembretes. Após carência de 7 dias corridos do vencimento sem pagamento, a Hexxa pode aplicar a Suspensão Técnica sem novo aviso.</p>
+<p>9.2 Durante a suspensão, o Cliente deve parar de anunciar o Bloco. O Ciclo continua correndo e o valor continua devido.</p>
+<p>9.3 Com a confirmação do pagamento integral, incluídos os encargos, a Hexxa reativa o mesmo Bloco em até 1 dia útil, desde que a OS ainda não tenha sido encerrada.</p>
+<p>9.4 Após 21 dias corridos do vencimento sem pagamento, a Hexxa pode rescindir a OS e devolver o Bloco ao Fornecedor, sem obrigação de reservar o mesmo Bloco, mantendo o direito de cobrar os valores devidos.</p>
+<h3 id="termos-10-eventos-do-fornecedor-abuso-e-outras-hipóteses-de-suspensão">10. Eventos do Fornecedor, abuso e outras hipóteses de suspensão</h3>
+<p>10.1 São <strong>Eventos do Fornecedor</strong>, entre outros:</p>
+<ul><li>(a) suspensão, limitação ou recolhimento do Bloco pelo Fornecedor ou pelo Titular;</li><li>(b) ordem, revogação ou exigência do RIR;</li><li>(c) término ou rescisão do contrato entre o Titular e o Fornecedor ou entre o Fornecedor e a Hexxa, ou fim do programa de revenda do Fornecedor;</li><li>(d) inclusão do Bloco ou do ASN Autorizado em listas de bloqueio relevantes;</li><li>(e) sanções econômicas ou restrições de exportação que alcancem a operação;</li><li>(f) ordem judicial ou de autoridade competente.</li></ul>
+<p>10.2 Ocorrendo um Evento do Fornecedor, a Hexxa pode suspender, limitar ou encerrar o Serviço na mesma extensão e no mesmo prazo aplicados a ela. A Hexxa avisará o Cliente assim que possível, com o motivo e o prazo informados pelo Fornecedor.</p>
+<p>10.3 <strong>Abuso grave.</strong> A Hexxa pode suspender o Serviço imediatamente, sem aviso prévio, nos casos de abuso grave definidos na AUP. Nas demais violações, a Hexxa avisará o Cliente e dará prazo de 48 horas para correção.</p>
+<p>10.4 <strong>Consequências financeiras.</strong></p>
+<ul><li>(a) <strong>Evento não causado pelo Cliente:</strong> a Hexxa, a seu critério, oferecerá Bloco substituto de mesmo tamanho, se houver, ou reembolsará pro rata o período pago e não usado. Esse é o único remédio do Cliente nesses casos.</li><li>(b) <strong>Evento causado pelo Cliente</strong> (violação da AUP ou do Contrato, informação falsa, listagem originada na sua rede ou sanção que alcance o Cliente): não há reembolso, e o Cliente responde pelos prejuízos causados.</li></ul>
+<p>10.5 A Hexxa pode retomar o Serviço quando cessada a causa da suspensão.</p>
+<h3 id="termos-11-reputação-listas-de-bloqueio-e-geolocalização">11. Reputação, listas de bloqueio e geolocalização</h3>
+<p>11.1 Antes da Entrega, a Hexxa verifica o Bloco nas principais listas de bloqueio públicas, como Spamhaus e UCEPROTECT. A Hexxa não garante a reputação do Bloco, a ausência de listagem futura nem a aceitação por serviços de terceiros (e-mail, streaming, bancos, plataformas).</p>
+<p>11.2 <strong>Listagem anterior à Entrega.</strong> Se, em até 7 dias da Data de Entrega, o Cliente demonstrar que o Bloco já estava listado antes da Entrega em Spamhaus SBL, Spamhaus DROP ou outra lista indicada na OS, sem culpa sua, e a Hexxa não obtiver a remoção em 10 dias úteis, o Cliente pode pedir Bloco substituto ou cancelar a OS com reembolso integral do Ciclo em curso.</p>
+<p>11.3 <strong>Geolocalização.</strong> As bases de geolocalização (MaxMind, IPinfo, IP2Location, DB-IP e outras) são de terceiros e se atualizam em ritmo próprio. A Hexxa publicará geofeed no padrão RFC 8805 com a localização informada pelo Cliente e pedirá correções às principais bases, com esforço razoável, sem garantir resultado nem prazo. Geolocalização divergente não dá direito a reembolso nem a abatimento.</p>
+<h3 id="termos-12-vigência-renovação-e-cancelamento">12. Vigência, renovação e cancelamento</h3>
+<p>12.1 Cada OS começa na Data de Entrega e vigora pelo Ciclo contratado, com renovação automática. Estes Termos vigoram enquanto houver OS ativa.</p>
+<p>12.2 <strong>Cancelamento pelo Cliente.</strong> O Cliente pode cancelar a qualquer tempo por e-mail para <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a>, com efeito ao fim do Ciclo em curso. Para evitar a cobrança do Ciclo seguinte, o cancelamento deve ser feito até 5 dias antes da renovação. Não há reembolso do Ciclo em curso, inclusive em Ciclos com desconto.</p>
+<p>12.3 <strong>Rescisão por descumprimento.</strong> Qualquer parte pode rescindir a OS por descumprimento não sanado em 10 dias do aviso. A Hexxa pode rescindir imediatamente nas hipóteses das cláusulas 9.4, 10 e 16 e em caso de falência, dissolução ou liquidação do Cliente.</p>
+<p>12.4 <strong>Encerramento pela Hexxa sem justa causa.</strong> A Hexxa pode encerrar uma OS com aviso de 60 dias, reembolsando pro rata o período pago e não usado.</p>
+<h3 id="termos-13-término-retirada-do-anúncio-e-devolução">13. Término: retirada do anúncio e devolução</h3>
+<p>13.1 Em qualquer término ou rescisão, o Cliente deve, dentro do Prazo de Retirada, parar de anunciar o Bloco, removê-lo dos seus filtros, objetos IRR e configurações, e confirmar por escrito.</p>
+<p>13.2 Após o Prazo de Retirada, ou após a confirmação do Cliente se ela vier antes, a Hexxa solicitará ao Fornecedor a remoção do ROA (ou a publicação de ROA AS0), do objeto de rota, do registro WHOIS e da delegação de DNS reverso, e devolverá o Bloco ao Fornecedor.</p>
+<p>13.3 Anunciar o Bloco depois do Prazo de Retirada é uso não autorizado. Nesse caso, a Hexxa pode informar os upstreams e o RIR sobre a revogação da LOA, e o Cliente pagará multa diária de 10% do valor mensal do Bloco por dia de anúncio, sem prejuízo de perdas e danos.</p>
+<p>13.4 Sobrevivem ao término as cláusulas sobre pagamento, responsabilidade, indenização, confidencialidade, proteção de dados, lei aplicável e foro.</p>
+<h3 id="termos-14-limitação-de-responsabilidade-e-indenização">14. Limitação de responsabilidade e indenização</h3>
+<p>14.1 Nenhuma parte responde por lucros cessantes, perda de receita, de clientes ou de dados, nem por danos indiretos.</p>
+<p>14.2 A responsabilidade total da Hexxa fica limitada ao valor efetivamente pago pelo Cliente nos 3 meses anteriores ao fato. Nos Eventos do Fornecedor, fica limitada ao previsto na cláusula 10.4(a).</p>
+<p>14.3 As limitações não se aplicam em caso de dolo nem nas hipóteses em que a lei não permita limitar responsabilidade.</p>
+<p>14.4 O Cliente indenizará a Hexxa, o Fornecedor e o Titular por reclamações, multas e custos decorrentes do uso do Bloco pelo Cliente ou por seus usuários, ou da violação deste Contrato.</p>
+<p>14.5 O Cliente reconhece que o preço reflete essa divisão de riscos.</p>
+<h3 id="termos-15-declarações-do-cliente">15. Declarações do Cliente</h3>
+<p>15.1 O Cliente declara que:</p>
+<ul><li>(a) existe regularmente e o signatário tem poderes para contratar;</li><li>(b) o ASN Autorizado é seu ou está sob seu controle legítimo;</li><li>(c) as informações do KYC são verdadeiras;</li><li>(d) nem ele nem seus sócios, administradores ou beneficiários finais são alvo de sanções, e não está sediado nem atua em favor de pessoas nos países e regiões da cláusula 16;</li><li>(e) usará o Bloco apenas para o uso declarado na OS.</li></ul>
+<p>15.2 Salvo o previsto expressamente neste Contrato, o Serviço é prestado no estado em que se encontra, sem outras garantias.</p>
+<h3 id="termos-16-sanções-e-países-vedados">16. Sanções e países vedados</h3>
+<p>16.1 A Hexxa não contrata com pessoas sediadas, residentes ou atuando em favor de pessoas na Rússia, em Belarus, no Irã, na Coreia do Norte, na Síria, em Cuba ou nas regiões ocupadas da Ucrânia (Crimeia, Sevastopol, as chamadas Repúblicas Populares de Donetsk e de Luhansk e as áreas ocupadas de Zaporizhzhia e Kherson). Também não contrata com pessoas listadas em sanções da ONU, dos EUA (OFAC) ou da União Europeia, nem com empresas controladas por elas, nem para uso do Bloco nesses territórios. A Hexxa pode atualizar essa lista conforme a lei e as exigências do Fornecedor.</p>
+<p>16.2 Nesses casos, a Hexxa pode suspender e rescindir imediatamente. O reembolso pro rata só será feito se e quando permitido pela legislação de sanções aplicável.</p>
+<h3 id="termos-17-proteção-de-dados-pessoais">17. Proteção de dados pessoais</h3>
+<p>17.1 Cada parte é controladora dos dados pessoais que trata. A Hexxa trata dados de representantes e contatos do Cliente (nome, cargo, e-mail e telefone) para executar o Contrato, fazer o KYC, cumprir obrigações legais, prevenir fraude e abuso e exercer direitos, nos termos da Lei Geral de Proteção de Dados (Lei 13.709/2018, "<strong>LGPD</strong>") e da Política de Privacidade publicada nesta página.</p>
+<p>17.2 Esses dados podem ser compartilhados com o Fornecedor, o Titular, o RIR (inclusive pela publicação do contato de abuso no WHOIS), o processador de pagamentos (Stripe) e provedores de checagem cadastral e de sanções. Alguns estão no exterior. A transferência internacional seguirá as regras da LGPD.</p>
+<p>17.3 O Cliente deve preferir endereços de função (como abuse@ e noc@) e garante que pode compartilhar os dados dos seus representantes.</p>
+<p>17.4 Os dados são mantidos durante o Contrato e por 5 anos após o término, para cumprir obrigações legais e exercer direitos, salvo prazo legal maior.</p>
+<p>17.5 Canal para titulares de dados (art. 41 da LGPD): <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a>.</p>
+<h3 id="termos-18-confidencialidade">18. Confidencialidade</h3>
+<p>18.1 São confidenciais, durante o Contrato e por 2 anos após o término: preço, condições comerciais, identidade do Fornecedor e do Titular quando não pública, e informações técnicas não públicas da outra parte.</p>
+<p>18.2 A confidencialidade não impede a divulgação exigida por lei, autoridade ou RIR, nem o compartilhamento com o Fornecedor e o Titular na medida necessária para o Serviço.</p>
+<h3 id="termos-19-comunicações">19. Comunicações</h3>
+<p>19.1 As comunicações são feitas por e-mail aos endereços da OS. Para a Hexxa: <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a>; denúncias de abuso: <a href="mailto:abuse@hexxacrm.com">abuse@hexxacrm.com</a>. A comunicação se considera recebida no envio, salvo aviso de falha de entrega.</p>
+<p>19.2 Avisos de abuso e de suspensão também são enviados ao contato de abuso do Cliente.</p>
+<h3 id="termos-20-alterações-destes-termos">20. Alterações destes Termos</h3>
+<p>20.1 A Hexxa pode alterar estes Termos ou a AUP com aviso de 30 dias. A alteração vale a partir da renovação seguinte, e o Cliente pode cancelar antes dela, sem ônus.</p>
+<p>20.2 Alterações exigidas pelo Fornecedor, pelo RIR, pela lei ou por autoridade podem valer em prazo menor, informado no aviso.</p>
+<h3 id="termos-21-disposições-gerais">21. Disposições gerais</h3>
+<p>21.1 <strong>Prevalência.</strong> Em caso de conflito: (a) a AUP prevalece quanto ao uso permitido; (b) a OS prevalece quanto a preço, quantidade, Ciclo e condições especiais; (c) estes Termos prevalecem nos demais casos.</p>
+<p>21.2 <strong>Cessão.</strong> O Cliente não pode ceder o Contrato sem consentimento escrito da Hexxa. A Hexxa pode cedê-lo a sucessor ou a empresa do seu grupo, com aviso ao Cliente.</p>
+<p>21.3 <strong>Força maior.</strong> Nenhuma parte responde por atrasos causados por força maior ou caso fortuito, o que não afasta a obrigação de pagar valores devidos.</p>
+<p>21.4 A tolerância não é novação nem renúncia. A nulidade de uma cláusula não afeta as demais. As partes são independentes, sem vínculo societário, trabalhista ou de representação.</p>
+<p>21.5 <strong>Idioma.</strong> Estes Termos têm versão em inglês. Em caso de divergência, prevalece a versão em português.</p>
+<h3 id="termos-22-lei-aplicável-e-foro">22. Lei aplicável e foro</h3>
+<p>22.1 O Contrato é regido pelas leis da República Federativa do Brasil.</p>
+<p>22.2 Fica eleito o foro da Comarca de São Paulo/SP, com renúncia a qualquer outro, por mais privilegiado que seja.</p>
+<hr>
+<h2 id="termos-anexo-i-ordem-de-serviço-modelo">Anexo I — Ordem de Serviço (modelo)</h2>
+<p><strong>OS nº [AAAA-NNNN]</strong> · Emitida em [DD/MM/AAAA] · Vinculada aos Termos de Serviço versão 1.0 e à AUP versão 1.0</p>
+<h4 id="termos-a-cliente">A. Cliente</h4>
+<div class="tabela"><table><thead><tr><th>Campo</th><th>Preenchimento</th></tr></thead><tbody><tr><td>Razão social</td><td>[RAZÃO SOCIAL]</td></tr><tr><td>CNPJ ou registro estrangeiro</td><td>[CNPJ / Nº DE REGISTRO E PAÍS]</td></tr><tr><td>Endereço da sede</td><td>[ENDEREÇO, CIDADE, ESTADO, PAÍS]</td></tr><tr><td>Signatário (nome e cargo)</td><td>[NOME], [CARGO]</td></tr><tr><td>E-mail do signatário</td><td>[E-MAIL CORPORATIVO]</td></tr><tr><td>Contato técnico (NOC)</td><td>[noc@dominio], [TELEFONE]</td></tr><tr><td>Contato financeiro</td><td>[financeiro@dominio]</td></tr><tr><td>Contato de abuso (publicado no WHOIS)</td><td>[abuse@dominio]</td></tr></tbody></table></div>
+<h4 id="termos-b-serviço">B. Serviço</h4>
+<div class="tabela"><table><thead><tr><th>Campo</th><th>Preenchimento</th></tr></thead><tbody><tr><td>ASN Autorizado</td><td>AS[NÚMERO]</td></tr><tr><td>Upstream(s) do Cliente</td><td>AS[NÚMERO] [NOME]; AS[NÚMERO] [NOME]</td></tr><tr><td>Tamanho e quantidade</td><td>☐ /24 · ☐ /23 · ☐ /22 · Quantidade: [N]</td></tr><tr><td>RIR de origem</td><td>☐ ARIN · ☐ RIPE NCC · ☐ APNIC · ☐ outro: ☐</td></tr><tr><td>Anúncios pretendidos</td><td>[ex.: /22 inteiro e/ou /24 específicos], para definir o ROA</td></tr><tr><td>Geolocalização desejada (não garantida)</td><td>[PAÍS / ESTADO / CIDADE]</td></tr><tr><td>DNS reverso</td><td>☐ Não · ☐ Sim, delegar para: [ns1.dominio], [ns2.dominio]</td></tr><tr><td>Uso pretendido</td><td>☐ Acesso à internet (ISP) · ☐ Hospedagem/data center · ☐ Rede corporativa · ☐ CDN/anycast próprio · ☐ Outro: [DESCREVER]</td></tr><tr><td>Descrição do uso</td><td>[TEXTO LIVRE]</td></tr><tr><td>Bloco atribuído</td><td>Informado no Kit de Entrega, que passa a integrar esta OS</td></tr></tbody></table></div>
+<h4 id="termos-c-condições-comerciais">C. Condições comerciais</h4>
+<div class="tabela"><table><thead><tr><th>Campo</th><th>Preenchimento</th></tr></thead><tbody><tr><td>Moeda</td><td>☐ BRL, com reajuste cambial (cláusula 8.3) · ☐ USD</td></tr><tr><td>Preço Base por bloco/mês</td><td>US$ [VALOR] por /24/23/22</td></tr><tr><td>Ciclo</td><td>☐ Mensal · ☐ Trimestral ([X]% desc.) · ☐ Semestral ([X]% desc.) · ☐ Anual ([X]% desc.)</td></tr><tr><td>Valor do Ciclo</td><td>[VALOR] (em BRL, conforme a PTAX da data de emissão de cada fatura)</td></tr><tr><td>Forma de pagamento</td><td>☐ Cartão · ☐ Pix · ☐ Boleto (via Stripe)</td></tr><tr><td>Carência de inadimplência antes da Suspensão Técnica</td><td>7 dias corridos</td></tr><tr><td>Encerramento por inadimplência</td><td>21 dias corridos após o vencimento</td></tr><tr><td>Prazo de Retirada no término</td><td>3 dias corridos</td></tr><tr><td>Listas cobertas pela cláusula 11.2</td><td>Spamhaus SBL, Spamhaus DROP</td></tr><tr><td>Condições especiais</td><td>[NENHUMA / DESCREVER]</td></tr><tr><td>Condições LACNIC (se aplicável)</td><td>Bloco de origem LACNIC: Cliente com ASN e IPv6 próprios; proibida nova sub-designação; demais condições da política do LACNIC</td></tr></tbody></table></div>
+<h4 id="termos-d-declarações-no-aceite-caixas-obrigatórias-no-checkout">D. Declarações no aceite (caixas obrigatórias no checkout)</h4>
+<ul><li>☐ Li e aceito os Termos de Serviço versão 1.0 e a Política de Uso Aceitável versão 1.0.</li><li>☐ Tenho poderes para contratar em nome do Cliente.</li><li>☐ O ASN informado é do Cliente, que não vai realugar, revender nem ceder o Bloco a terceiros.</li><li>☐ O Cliente, seus sócios e administradores não são alvo de sanções, e o Cliente não está sediado nem atua em favor de pessoas nos países e regiões vedados.</li></ul>
+<h4 id="termos-e-registro-do-aceite-preenchido-pelo-sistema">E. Registro do aceite (preenchido pelo sistema)</h4>
+<div class="tabela"><table><thead><tr><th>Campo</th><th>Valor</th></tr></thead><tbody><tr><td>Data e hora (UTC)</td><td>[AAAA-MM-DD hh:mm:ss]</td></tr><tr><td>IP e navegador (user agent)</td><td>[IP] · [USER AGENT]</td></tr><tr><td>E-mail do usuário que aceitou</td><td>[E-MAIL]</td></tr><tr><td>Hash SHA-256 dos documentos aceitos</td><td>[HASH TERMOS] · [HASH AUP] · [HASH OS]</td></tr><tr><td>Sessão de checkout Stripe</td><td>[ID DA SESSÃO]</td></tr></tbody></table></div></section><section><h2 id="aup">Política de Uso Aceitável (AUP)</h2>
+<p><strong>HEXXA LTDA</strong> · Versão 1.0 · Vigente desde 28/10/2026</p>
+<h3 id="aup-1-objetivo-e-alcance">1. Objetivo e alcance</h3>
+<p>1.1 Esta Política define como o Cliente pode usar os blocos IPv4 fornecidos pela Hexxa ("<strong>Bloco</strong>"). Ela integra os Termos de Serviço de Locação de Endereços IPv4 ("<strong>Termos</strong>"), e os termos com inicial maiúscula têm o significado dado nos Termos.</p>
+<p>1.2 A Política vale para o Cliente e para todos que usam o Bloco por meio dele: empregados, clientes, usuários finais e prestadores de serviço. O Cliente responde pelo uso do Bloco por todos eles.</p>
+<p>1.3 A Política incorpora as exigências do Fornecedor e do Titular. Exigências adicionais específicas de um Bloco serão comunicadas por escrito e passam a integrar a Ordem de Serviço.</p>
+<h3 id="aup-2-usos-permitidos">2. Usos permitidos</h3>
+<p>2.1 O Bloco pode ser usado em atividades lícitas compatíveis com o uso declarado na Ordem de Serviço, por exemplo:</p>
+<ul><li>(a) acesso à internet para assinantes de provedor (ISP), inclusive com CGNAT;</li><li>(b) hospedagem, servidores dedicados, VPS e colocation para clientes identificados;</li><li>(c) rede corporativa, serviços próprios e aplicações da empresa;</li><li>(d) CDN, anycast e infraestrutura de DNS próprias;</li><li>(e) envio de e-mail próprio, transacional ou para destinatários que consentiram, com SPF, DKIM e DMARC configurados.</li></ul>
+<h3 id="aup-3-usos-proibidos">3. Usos proibidos</h3>
+<p>3.1 É proibido usar o Bloco, direta ou indiretamente, para:</p>
+<ul><li>(a) <strong>spam</strong>: envio de e-mail não solicitado em massa, listas compradas ou coletadas, ou envio sem mecanismo de descadastro;</li><li>(b) <strong>proxy residencial, "ISP", móvel ou rotativo</strong>, ou qualquer serviço que exponha o Bloco como saída de tráfego de terceiros não identificados;</li><li>(c) <strong>VPN pública usada para abuso</strong>, ou VPN sem tratamento de denúncias;</li><li>(d) <strong>varredura (scanning) e ataques</strong>: varredura de portas ou vulnerabilidades em redes de terceiros sem autorização, força bruta, credential stuffing, negação de serviço (DoS/DDoS) e exploração de falhas;</li><li>(e) <strong>malware</strong>: hospedagem, distribuição ou controle de vírus, ransomware, botnets e similares;</li><li>(f) <strong>phishing</strong> e páginas fraudulentas que imitam terceiros;</li><li>(g) <strong>servidores de comando e controle (C2)</strong> de botnets ou malware;</li><li>(h) <strong>conteúdo ilegal</strong>, incluindo material de abuso sexual infantil, que será comunicado às autoridades;</li><li>(i) <strong>fraude</strong>: fraude de cliques ou de anúncios, criação de contas falsas em massa, fraude com cartões e bots para contornar limites de plataformas;</li><li>(j) violação de direitos de propriedade intelectual, como pirataria;</li><li>(k) <strong>contornar sanções</strong> econômicas ou restrições de exportação, ou dar acesso ao Bloco a pessoas ou territórios vedados nos Termos;</li><li>(l) <strong>falsificar endereços IP de origem (spoofing)</strong> ou anunciar prefixos de terceiros sem autorização (sequestro de rota);</li><li>(m) <strong>realugar, sublocar, revender ou ceder o Bloco</strong>, ou permitir que outro ASN o anuncie, conforme a cláusula 6.2 dos Termos;</li><li>(n) qualquer atividade ilegal no Brasil ou no país onde o Bloco é usado.</li></ul>
+<h3 id="aup-4-usos-que-dependem-de-autorização-prévia-e-por-escrito">4. Usos que dependem de autorização prévia e por escrito</h3>
+<p>4.1 Os usos abaixo só são permitidos com autorização prévia e por escrito da Hexxa, que pode negá-la ou impor condições (como KYC dos usuários finais, limites de volume e tratamento de denúncias):</p>
+<ul><li>(a) VPN comercial oferecida ao público;</li><li>(b) proxy de datacenter oferecido a terceiros;</li><li>(c) nós de saída da rede Tor;</li><li>(d) envio de e-mail marketing em volume, mesmo com consentimento;</li><li>(e) varredura da internet para pesquisa ou segurança, com identificação pública e opção de exclusão;</li><li>(f) coleta automatizada de dados (scraping) em grande escala.</li></ul>
+<h3 id="aup-5-abuso-grave-suspensão-imediata">5. Abuso grave: suspensão imediata</h3>
+<p>5.1 A Hexxa pode suspender o Serviço <strong>imediatamente, sem aviso prévio</strong>, quando houver:</p>
+<ul><li>(a) malware, phishing ou servidor C2 ativos;</li><li>(b) ataque de negação de serviço originado no Bloco;</li><li>(c) spam em massa que gere listagem do Bloco ou do ASN;</li><li>(d) material de abuso sexual infantil;</li><li>(e) sequestro de rota ou spoofing;</li><li>(f) indício de sanção ou de uso em território vedado;</li><li>(g) ordem judicial, de autoridade, do RIR, do Fornecedor ou do Titular;</li><li>(h) risco iminente à reputação do Bloco ou à continuidade do contrato da Hexxa com o Fornecedor.</li></ul>
+<h3 id="aup-6-obrigações-técnicas">6. Obrigações técnicas</h3>
+<p>6.1 O Cliente deve:</p>
+<ul><li>(a) anunciar o Bloco somente pelo ASN Autorizado, em prefixos compatíveis com o ROA;</li><li>(b) aplicar filtros contra falsificação de endereço de origem em sua rede (BCP 38, RFC 2827);</li><li>(c) corrigir, após notificação, serviços abertos usados em ataques de amplificação (como DNS recursivo aberto, NTP, SSDP e memcached);</li><li>(d) manter um contato de abuso funcional, de função (como abuse@dominio), monitorado todos os dias, inclusive fins de semana;</li><li>(e) manter registros suficientes para identificar, na medida permitida pela lei, qual cliente ou usuário usava um endereço em determinado momento;</li><li>(f) cumprir a legislação aplicável, inclusive, quando for o caso, a guarda de registros de conexão prevista no Marco Civil da Internet (Lei 12.965/2014).</li></ul>
+<h3 id="aup-7-tratamento-de-denúncias-de-abuso">7. Tratamento de denúncias de abuso</h3>
+<p>7.1 A Hexxa encaminha ao contato de abuso do Cliente as denúncias recebidas sobre o Bloco.</p>
+<p>7.2 Prazos do Cliente:</p>
+<ul><li>(a) <strong>confirmação de recebimento em até 24 horas</strong>;</li><li>(b) <strong>solução, ou resposta fundamentada explicando por que a denúncia não procede, em até 48 horas</strong>;</li><li>(c) em abuso grave, ação para cessar o abuso <strong>em até 4 horas</strong>, sem prejuízo da suspensão imediata.</li></ul>
+<p>7.3 A resposta deve informar a causa, as medidas tomadas e as ações para evitar repetição. A Hexxa pode pedir evidências.</p>
+<p>7.4 Denúncias recorrentes: 3 denúncias procedentes em 30 dias, ou denúncias repetidas sobre o mesmo usuário final, permitem à Hexxa exigir um plano de correção e, se ele não for cumprido, suspender o Serviço.</p>
+<h3 id="aup-8-medidas">8. Medidas</h3>
+<p>8.1 Conforme a gravidade e a recorrência, a Hexxa pode: (a) advertir; (b) exigir a correção em prazo determinado; (c) aplicar a Suspensão Técnica; (d) rescindir a Ordem de Serviço.</p>
+<p>8.2 As medidas não dão direito a reembolso quando a violação for do Cliente ou de seus usuários, conforme a cláusula 10.4(b) dos Termos.</p>
+<p>8.3 O Cliente arca com os custos que a violação causar à Hexxa, ao Fornecedor ou ao Titular, inclusive de remoção de listas de bloqueio.</p>
+<h3 id="aup-9-listas-de-bloqueio">9. Listas de bloqueio</h3>
+<p>9.1 Se o Bloco ou o ASN do Cliente for listado em razão do uso pelo Cliente ou por seus usuários, o Cliente deve corrigir a causa e pedir a remoção, seguindo o processo de cada lista.</p>
+<p>9.2 A Hexxa não paga taxas de remoção expressa de listas cuja causa foi o uso do Cliente.</p>
+<h3 id="aup-10-cooperação-com-autoridades-e-terceiros">10. Cooperação com autoridades e terceiros</h3>
+<p>10.1 A Hexxa não monitora o tráfego do Cliente. Pode, porém, receber e encaminhar denúncias e consultar fontes públicas de reputação.</p>
+<p>10.2 A Hexxa cumpre ordens judiciais e requisições legais de autoridades e pode compartilhar com elas, com o Fornecedor, o Titular e o RIR as informações necessárias, nos limites da lei e da LGPD (Lei 13.709/2018).</p>
+<h3 id="aup-11-como-denunciar-abuso">11. Como denunciar abuso</h3>
+<p>11.1 Envie a denúncia para <strong><a href="mailto:abuse@hexxacrm.com">abuse@hexxacrm.com</a></strong>, com: endereço IP, data e hora com fuso horário, tipo de abuso e evidências (como cabeçalhos completos de e-mail ou registros).</p>
+<h3 id="aup-12-alterações">12. Alterações</h3>
+<p>12.1 A Hexxa pode alterar esta Política conforme a cláusula 20 dos Termos. Mudanças exigidas pelo Fornecedor, pelo Titular, pelo RIR ou pela lei podem valer em prazo menor, informado no aviso.</p>
+<p>12.2 Em caso de divergência entre esta versão e a versão em inglês, prevalece esta versão em português.</p></section><section><h2 id="privacidade">Política de Privacidade</h2>
+<p><strong>HEXXA LTDA</strong> · Versão 1.0 · Vigente desde 28/10/2026</p>
+<h3 id="privacidade-1-quem-somos">1. Quem somos</h3>
+<p>1.1 A <strong>HEXXA LTDA</strong>, CNPJ 63.048.597/0001-64, Rua Pais Leme, 215, conj. 1713, Pinheiros, São Paulo/SP, CEP 05424-150 ("<strong>Hexxa</strong>"), é a controladora dos dados pessoais descritos nesta Política, nos termos da Lei Geral de Proteção de Dados (Lei 13.709/2018, "<strong>LGPD</strong>").</p>
+<h3 id="privacidade-2-que-dados-tratamos-e-por-quê">2. Que dados tratamos e por quê</h3>
+<p>2.1 <strong>Clientes e interessados em contratar:</strong> nome, cargo, e-mail e telefone dos representantes e contatos (técnico, financeiro e de abuso), dados cadastrais da empresa e dados técnicos (ASN, prefixos, uso declarado). Finalidades: enviar propostas, fazer a verificação cadastral (KYC), executar o contrato, cobrar, cumprir obrigações legais e prevenir fraude e abuso. Bases legais: procedimentos preliminares e execução de contrato, cumprimento de obrigação legal, exercício regular de direitos e legítimo interesse (LGPD, art. 7º, II, V, VI e IX).</p>
+<p>2.2 <strong>Contatos comerciais de empresas:</strong> dados profissionais obtidos em fontes públicas (registros WHOIS/RDAP dos registros regionais de internet, PeeringDB, sites das empresas e cadastros públicos, como o de prestadoras da Anatel), usados para oferecer nossos serviços a empresas do setor. Base legal: legítimo interesse (art. 7º, IX). Os contatos comerciais por e-mail e telefone podem ser feitos com apoio de sistemas automatizados, inclusive assistente virtual.</p>
+<p>2.3 <strong>Pagamentos:</strong> os dados de pagamento são tratados diretamente pela Stripe. A Hexxa não armazena dados de cartão.</p>
+<h3 id="privacidade-3-compartilhamento">3. Compartilhamento</h3>
+<p>3.1 Compartilhamos dados apenas na medida necessária com: o Fornecedor e o Titular do Bloco e o registro regional de internet (inclusive a publicação do contato de abuso no WHOIS/RDAP); o processador de pagamentos (Stripe); provedores de infraestrutura (hospedagem em nuvem, e-mail, telefonia e processamento por inteligência artificial); provedores de checagem cadastral e de sanções; e autoridades, quando exigido por lei.</p>
+<p>3.2 Alguns desses fornecedores estão no exterior. A transferência internacional segue as regras da LGPD (art. 33).</p>
+<h3 id="privacidade-4-por-quanto-tempo">4. Por quanto tempo</h3>
+<p>4.1 Dados de clientes: durante o contrato e por 5 anos após o término, salvo prazo legal maior. Contatos comerciais (item 2.2): até a oposição do titular ou por até 2 anos sem interação; o pedido para não ser contatado é guardado para que não haja novo contato.</p>
+<h3 id="privacidade-5-seus-direitos">5. Seus direitos</h3>
+<p>5.1 O titular pode pedir confirmação, acesso, correção, anonimização, bloqueio ou eliminação, portabilidade, informação sobre compartilhamento, revisão de decisões automatizadas e se opor ao tratamento (LGPD, art. 18), pelo canal <strong><a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a></strong>. Para não receber mais contatos comerciais, basta responder a qualquer e-mail pedindo a remoção ou dizer isso na ligação.</p>
+<p>5.2 O titular também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+<h3 id="privacidade-6-segurança-e-alterações">6. Segurança e alterações</h3>
+<p>6.1 Adotamos medidas técnicas e administrativas razoáveis para proteger os dados, como controle de acesso e armazenamento de credenciais em cofre de segredos. Esta Política pode ser atualizada; a versão vigente fica sempre nesta página.</p></section>
+</main>
+<footer>HEXXA LTDA · CNPJ 63.048.597/0001-64 · Rua Pais Leme, 215, conj. 1713 · Pinheiros · São Paulo/SP · CEP 05424-150 · Brasil<br><a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a> · abuso: <a href="mailto:abuse@hexxacrm.com">abuse@hexxacrm.com</a> · <a href="https://hexxacrm.com">hexxacrm.com</a></footer>
+</body>
+</html>

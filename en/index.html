@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hexxa · Terms of Service</title>
+<meta name="description" content="IPv4 Lease Terms of Service, Acceptable Use Policy and Privacy Policy · version 1.0">
+<style>
+:root{--bg:#ffffff;--fg:#1d2433;--muted:#5b6475;--line:#e3e6ec;--accent:#0b5cad;--soft:#f5f7fa}
+@media (prefers-color-scheme: dark){:root{--bg:#12151b;--fg:#e6e9ef;--muted:#a3abba;--line:#2a303b;--accent:#6aa9ff;--soft:#1a1f27}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+header,main,footer{max-width:820px;margin:0 auto;padding:0 16px}
+header{padding-top:28px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.marca{font-weight:700;font-size:20px;letter-spacing:.2px}
+.sub{color:var(--muted);font-size:14px;margin:2px 0 10px}
+nav{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;margin:10px 0 6px}
+nav a{color:var(--accent);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.idioma{font-size:14px;margin:0 0 12px}
+.idioma a{color:var(--accent)}
+h2{font-size:26px;line-height:1.25;margin:44px 0 6px;padding-top:12px;border-top:3px solid var(--fg)}
+h3{font-size:19px;margin:30px 0 8px}
+h4{font-size:16px;margin:22px 0 6px}
+p{margin:10px 0}
+ul{margin:6px 0 10px;padding-left:22px}
+li{margin:3px 0}
+a{color:var(--accent)}
+hr{border:0;border-top:1px dashed var(--line);margin:36px 0}
+blockquote{margin:12px 0;padding:8px 14px;background:var(--soft);border-left:3px solid var(--accent);color:var(--muted)}
+blockquote p{margin:4px 0}
+.tabela{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+code{font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:56px;padding-top:14px;padding-bottom:40px}
+@media print{nav,.idioma{display:none}h2{break-before:page}}
+</style>
+</head>
+<body>
+<header>
+<div class="marca">Hexxa</div>
+<div class="sub">IPv4 Lease Terms of Service, Acceptable Use Policy and Privacy Policy · version 1.0</div>
+<nav><a href="#terms">Terms of Service</a> <a href="#aup">Acceptable Use (AUP)</a> <a href="#privacy">Privacy</a> <a href="brokerage.html">Brokerage (block holders)</a></nav>
+<p class="idioma"><a href="../">Versão em português (prevalece)</a></p>
+</header>
+<main>
+<section><h2 id="terms">Terms of Service – IPv4 Address Lease</h2>
+<p><strong>HEXXA LTDA</strong> · Version 1.0 · Effective from 2026-10-28</p>
+<blockquote><p><strong>Language.</strong> This is the English version of the <em>Termos de Serviço de Locação de Endereços IPv4</em>. In case of any conflict between versions, <strong>the Portuguese version prevails</strong>. For Customers established in Brazil, this rule applies without exception.</p></blockquote>
+<p>By ticking "I have read and accept" at checkout, the legal entity identified in the Service Order ("<strong>Customer</strong>"), acting through its representative, enters into these Terms with <strong>HEXXA LTDA</strong>, CNPJ 63.048.597/0001-64, with registered office at Rua Pais Leme, 215, conj. 1713, Pinheiros, São Paulo/SP, CEP 05424-150, Brazil, website hexxacrm.com, e-mail <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a> ("<strong>Hexxa</strong>").</p>
+<p>These Terms, the Acceptable Use Policy ("<strong>AUP</strong>") and each Service Order ("<strong>SO</strong>", template in Annex I) form a single agreement (the "<strong>Agreement</strong>").</p>
+<h3 id="terms-1-definitions">1. Definitions</h3>
+<p>1.1 <strong>Block</strong>: a set of IPv4 addresses, from /24 to /22, stated in the Delivery Kit and linked to an SO.</p>
+<p>1.2 <strong>Holder</strong>: the organization registered with the RIR as holder of the Block.</p>
+<p>1.3 <strong>Supplier</strong>: the company from which Hexxa obtains the right to use the Block (a platform, a lessor or the Holder itself).</p>
+<p>1.4 <strong>RIR</strong>: the regional internet registry responsible for the Block (ARIN, RIPE NCC, APNIC or other).</p>
+<p>1.5 <strong>Authorized ASN</strong>: the Customer's autonomous system number stated in the SO, the only one authorized to originate the Block.</p>
+<p>1.6 <strong>LOA</strong>: letter of authorization, issued by the Holder or the Supplier, allowing the Authorized ASN to announce the Block.</p>
+<p>1.7 <strong>ROA</strong>: route origin authorization published in the RIR's RPKI. An <strong>AS0 ROA</strong> is a ROA stating that no ASN may originate the Block.</p>
+<p>1.8 <strong>Block Records</strong>: the ROA, the route object in an IRR database, the WHOIS/RDAP record, the reverse DNS delegation and the geofeed for the Block.</p>
+<p>1.9 <strong>Delivery Kit</strong>: the LOA, Block data, Block Records and instructions sent to the Customer.</p>
+<p>1.10 <strong>Delivery Date</strong>: the date on which Hexxa sends the Delivery Kit with the ROA for the Authorized ASN already published.</p>
+<p>1.11 <strong>Cycle</strong>: the billing period contracted in the SO (monthly, quarterly, semi-annual or annual).</p>
+<p>1.12 <strong>Technical Suspension</strong>: withdrawal of the authorization to announce, by publishing an AS0 ROA, removing the Authorized ASN's ROA and/or revoking the LOA, with notice to the Customer's upstreams when needed.</p>
+<p>1.13 <strong>Withdrawal Period</strong>: the period for the Customer to stop announcing the Block after termination: 3 calendar days, unless the SO states otherwise.</p>
+<h3 id="terms-2-purpose-and-nature-of-the-service">2. Purpose and nature of the service</h3>
+<p>2.1 During the term of the SO, Hexxa grants the Customer the exclusive, non-transferable right, revocable in the cases set out in this Agreement, to announce the Block on the internet through the Authorized ASN and to use the addresses in its network (the "<strong>Service</strong>").</p>
+<p>2.2 The Customer acknowledges that:</p>
+<ul><li>(a) IP addresses are not property and are subject to RIR policies;</li><li>(b) Hexxa is <strong>not the Holder</strong> of the Block and obtains it from the Supplier;</li><li>(c) the Agreement does not transfer holdership or registration of the Block;</li><li>(d) "lease" is the market term; the Service consists of the right of use described in clause 2.1.</li></ul>
+<p>2.3 <strong>Back-to-back terms.</strong> Hexxa's rights towards the Customer follow the rights of the Supplier and the Holder towards Hexxa. Whenever the Supplier, the Holder or the RIR may suspend, restrict or recall the Block, Hexxa may do the same towards the Customer, under clause 10. The AUP incorporates the Supplier's requirements on use of the Block. Additional requirements specific to a Block will be notified in writing and become part of the SO.</p>
+<p>2.4 The Service does not include IP transit, connectivity, upstream, equipment, configuration of the Customer's network, or any guarantee that third parties will accept the announcement.</p>
+<h3 id="terms-3-ordering-and-electronic-acceptance">3. Ordering and electronic acceptance</h3>
+<p>3.1 Ordering follows these steps: quote, customer verification ("<strong>KYC</strong>"), acceptance, payment and delivery.</p>
+<p>3.2 The Agreement is formed upon electronic acceptance and takes effect upon confirmation of payment. The parties recognize electronic acceptance as a valid expression of consent and as evidence of authorship and integrity. Hexxa records the date and time, IP address, user e-mail, version and a copy of the accepted documents, and sends a copy to the Customer.</p>
+<p>3.3 The person accepting represents that they have authority to bind the Customer.</p>
+<p>3.4 Hexxa may refuse or cancel any order before Delivery, including because of the KYC result or lack of stock. In that case, it refunds the amount paid within 10 business days, subject to clause 16.</p>
+<h3 id="terms-4-customer-information-kyc">4. Customer information (KYC)</h3>
+<p>4.1 The Customer shall provide true, complete and up-to-date information, including proof of control of the Authorized ASN and a working abuse contact. Changes must be notified within 10 days.</p>
+<p>4.2 Hexxa may repeat the checks at any time, including at renewal, and request additional documents if an alert arises. Refusal to provide them, or false information, allows suspension and immediate termination.</p>
+<p>4.3 The Customer authorizes:</p>
+<ul><li>(a) sharing of the necessary customer data with the Supplier, the Holder and the RIR;</li><li>(b) publication, in the RIR's WHOIS/RDAP, of its company name, city, country and abuse contact, associated with the Block.</li></ul>
+<h3 id="terms-5-delivery-and-activation">5. Delivery and activation</h3>
+<p>5.1 Once payment is confirmed and KYC is approved, Hexxa will send the Delivery Kit within 3 business days. Timelines also depend on the Supplier and the RIR.</p>
+<p>5.2 The Delivery Kit includes at least: LOA, prefix, ROA published for the Authorized ASN, route object (where applicable), WHOIS record, and configuration and geolocation instructions.</p>
+<p>5.3 The Customer is responsible for configuring its routers, updating its filters and IRR objects (such as its AS-SET) and obtaining acceptance of the announcement by its upstreams. Hexxa may assist with information, without responsibility for the Customer's network.</p>
+<p>5.4 After the announcement, Hexxa checks the route origin, RPKI validity, blocklist status and geolocation, and confirms activation to the Customer.</p>
+<p>5.5 If Hexxa fails to send the Delivery Kit within 10 business days of payment confirmation, for reasons not attributable to the Customer, the Customer may cancel the SO and receive a full refund of the amount paid.</p>
+<p>5.6 A change of Authorized ASN, a new LOA, reverse DNS delegation or a change of geolocation after Delivery requires a written request and may have a cost, disclosed before execution.</p>
+<h3 id="terms-6-customer-obligations">6. Customer obligations</h3>
+<p>6.1 The Customer shall:</p>
+<ul><li>(a) originate the Block only from the Authorized ASN, with announcements consistent with the ROA;</li><li>(b) comply with the AUP and applicable law, including, where applicable, the retention of connection logs required by the Brazilian Internet Civil Framework (<em>Marco Civil da Internet</em>, Law 12,965/2014);</li><li>(c) keep a working abuse contact and respond to abuse reports within the AUP deadlines: acknowledgement within 24 hours and resolution or reasoned response within 48 hours;</li><li>(d) not change, or attempt to change, the Block Records except through Hexxa;</li><li>(e) cooperate with Hexxa, the Supplier, the Holder, the RIR and authorities in abuse investigations;</li><li>(f) bear the cost of removal from blocklists caused by its network, customers or users;</li><li>(g) keep its data and its technical, billing and abuse contacts up to date.</li></ul>
+<p>6.2 <strong>No re-leasing.</strong> The Customer may not, in whole or in part, sublease, re-lease, resell or assign the Block, sub-assign it to another organization in WHOIS/RDAP, or allow another ASN to announce it. Assigning addresses to the Customer's own end users, as part of its connectivity or hosting services, is not a breach, provided that the Block is announced only by the Authorized ASN and the Customer remains responsible for all use.</p>
+<p>6.3 If the Block originates from LACNIC, the LACNIC policy conditions on sub-assignment stated in the SO also apply.</p>
+<p>6.4 The Customer is responsible for the use of the Block by its employees, customers and users.</p>
+<h3 id="terms-7-hexxa-obligations">7. Hexxa obligations</h3>
+<p>7.1 Hexxa shall:</p>
+<ul><li>(a) send the Delivery Kit within the timelines of clause 5;</li><li>(b) request the Supplier to publish and maintain the ROA, route object and WHOIS record during the term;</li><li>(c) use reasonable efforts to fix reputation and geolocation issues, under clause 11;</li><li>(d) provide support at <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a> on business days, 9 am to 6 pm (Brasília time);</li><li>(e) forward to the Customer, within 24 hours of receipt, notices from the Supplier, the Holder or the RIR that affect it.</li></ul>
+<h3 id="terms-8-price-billing-and-payment">8. Price, billing and payment</h3>
+<p>8.1 Price, Cycle, currency and discounts are stated in the SO. Payment is <strong>always in advance</strong>, per Cycle, via Stripe (Pix, boleto or card). Longer Cycles may carry a discount, stated in the SO.</p>
+<p>8.2 <strong>Automatic renewal.</strong> The SO renews for an equal Cycle unless cancelled under clause 12.2.</p>
+<ul><li>Card: automatic charge on the renewal date.</li><li>Pix and boleto: invoice sent at least 7 days in advance, due on the renewal date.</li></ul>
+<p>8.3 <strong>Customers in Brazil: BRL price with exchange-rate adjustment.</strong> The price is based in US dollars (the "<strong>Base Price</strong>"). The BRL amount of each invoice is the Base Price multiplied by the PTAX selling rate for the US dollar published by the Central Bank of Brazil on the business day immediately before the invoice is issued. Once issued, the invoice is not converted again. If no PTAX rate is published for that day, the last published rate applies.</p>
+<p>8.4 <strong>Customers outside Brazil: price in USD.</strong> Price and payment are in US dollars. Bank charges, conversion fees and withholding taxes are borne by the Customer, so that Hexxa receives the full invoice amount.</p>
+<p>8.5 <strong>Taxes.</strong> Prices include applicable taxes. Hexxa will issue the applicable tax document.</p>
+<p>8.6 <strong>Base Price adjustment.</strong> Hexxa may adjust the Base Price with 30 days' notice, effective from the next Cycle. The Customer may cancel before renewal at no cost.</p>
+<p>8.7 <strong>Late payment.</strong> Overdue amounts bear a 2% penalty, interest of 1% per month pro rata die and monetary adjustment by IPCA, without prejudice to Technical Suspension.</p>
+<p>8.8 <strong>Disputes.</strong> Charges must be disputed in writing within 30 days. An unfounded chargeback is treated as non-payment.</p>
+<h3 id="terms-9-non-payment-and-technical-suspension">9. Non-payment and Technical Suspension</h3>
+<p>9.1 If an invoice is not paid when due, Hexxa will send reminders. After a grace period of 7 calendar days from the due date without payment, Hexxa may apply Technical Suspension without further notice.</p>
+<p>9.2 During suspension, the Customer must stop announcing the Block. The Cycle keeps running and the amount remains due.</p>
+<p>9.3 Upon confirmation of full payment, including charges, Hexxa reactivates the same Block within 1 business day, provided the SO has not been terminated.</p>
+<p>9.4 After 21 calendar days from the due date without payment, Hexxa may terminate the SO and return the Block to the Supplier, with no obligation to reserve the same Block, and remains entitled to collect the amounts due.</p>
+<h3 id="terms-10-supplier-events-abuse-and-other-grounds-for-suspension">10. Supplier Events, abuse and other grounds for suspension</h3>
+<p>10.1 <strong>Supplier Events</strong> include, among others:</p>
+<ul><li>(a) suspension, restriction or recall of the Block by the Supplier or the Holder;</li><li>(b) an order, revocation or requirement of the RIR;</li><li>(c) expiry or termination of the agreement between the Holder and the Supplier or between the Supplier and Hexxa, or the end of the Supplier's reseller program;</li><li>(d) listing of the Block or the Authorized ASN on relevant blocklists;</li><li>(e) economic sanctions or export restrictions affecting the transaction;</li><li>(f) a court order or an order of a competent authority.</li></ul>
+<p>10.2 Upon a Supplier Event, Hexxa may suspend, restrict or terminate the Service to the same extent and within the same timeline applied to Hexxa. Hexxa will notify the Customer as soon as possible, with the reason and the deadline given by the Supplier.</p>
+<p>10.3 <strong>Serious abuse.</strong> Hexxa may suspend the Service immediately, without prior notice, in the cases of serious abuse defined in the AUP. For other breaches, Hexxa will notify the Customer and allow 48 hours for remedy.</p>
+<p>10.4 <strong>Financial consequences.</strong></p>
+<ul><li>(a) <strong>Event not caused by the Customer:</strong> Hexxa will, at its discretion, offer a replacement Block of the same size, if available, or refund pro rata the paid and unused period. This is the Customer's sole remedy in such cases.</li><li>(b) <strong>Event caused by the Customer</strong> (breach of the AUP or the Agreement, false information, listing originating from its network, or sanctions affecting the Customer): no refund is due, and the Customer is liable for the losses caused.</li></ul>
+<p>10.5 Hexxa may resume the Service once the cause of suspension ends.</p>
+<h3 id="terms-11-reputation-blocklists-and-geolocation">11. Reputation, blocklists and geolocation</h3>
+<p>11.1 Before Delivery, Hexxa checks the Block against the main public blocklists, such as Spamhaus and UCEPROTECT. Hexxa does not guarantee the Block's reputation, the absence of future listings, or acceptance by third-party services (e-mail, streaming, banks, platforms).</p>
+<p>11.2 <strong>Listing prior to Delivery.</strong> If, within 7 days of the Delivery Date, the Customer shows that the Block was already listed before Delivery on Spamhaus SBL, Spamhaus DROP or another list stated in the SO, through no fault of its own, and Hexxa does not obtain removal within 10 business days, the Customer may request a replacement Block or cancel the SO with a full refund of the current Cycle.</p>
+<p>11.3 <strong>Geolocation.</strong> Geolocation databases (MaxMind, IPinfo, IP2Location, DB-IP and others) are run by third parties and update at their own pace. Hexxa will publish an RFC 8805 geofeed with the location provided by the Customer and request corrections from the main databases, using reasonable efforts, without guaranteeing result or timing. Divergent geolocation does not entitle the Customer to a refund or price reduction.</p>
+<h3 id="terms-12-term-renewal-and-cancellation">12. Term, renewal and cancellation</h3>
+<p>12.1 Each SO starts on the Delivery Date and runs for the contracted Cycle, with automatic renewal. These Terms remain in force while any SO is active.</p>
+<p>12.2 <strong>Cancellation by the Customer.</strong> The Customer may cancel at any time by e-mail to <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a>, effective at the end of the current Cycle. To avoid being charged for the next Cycle, cancellation must be made at least 5 days before renewal. The current Cycle is not refunded, including discounted Cycles.</p>
+<p>12.3 <strong>Termination for breach.</strong> Either party may terminate the SO for a breach not remedied within 10 days of notice. Hexxa may terminate immediately in the cases of clauses 9.4, 10 and 16 and in the event of the Customer's bankruptcy, dissolution or liquidation.</p>
+<p>12.4 <strong>Termination by Hexxa for convenience.</strong> Hexxa may terminate an SO with 60 days' notice, refunding pro rata the paid and unused period.</p>
+<h3 id="terms-13-termination-withdrawal-of-the-announcement-and-return">13. Termination: withdrawal of the announcement and return</h3>
+<p>13.1 Upon any expiry or termination, the Customer must, within the Withdrawal Period, stop announcing the Block, remove it from its filters, IRR objects and configurations, and confirm in writing.</p>
+<p>13.2 After the Withdrawal Period, or after the Customer's confirmation if earlier, Hexxa will ask the Supplier to remove the ROA (or publish an AS0 ROA), the route object, the WHOIS record and the reverse DNS delegation, and will return the Block to the Supplier.</p>
+<p>13.3 Announcing the Block after the Withdrawal Period is unauthorized use. In that case, Hexxa may inform the upstreams and the RIR that the LOA has been revoked, and the Customer shall pay a daily penalty of 10% of the Block's monthly price for each day of announcement, without prejudice to damages.</p>
+<p>13.4 The clauses on payment, liability, indemnity, confidentiality, data protection, governing law and jurisdiction survive termination.</p>
+<h3 id="terms-14-limitation-of-liability-and-indemnity">14. Limitation of liability and indemnity</h3>
+<p>14.1 Neither party is liable for loss of profits, revenue, customers or data, or for indirect damages.</p>
+<p>14.2 Hexxa's total liability is limited to the amount actually paid by the Customer in the 3 months before the event. For Supplier Events, it is limited to clause 10.4(a).</p>
+<p>14.3 These limitations do not apply in case of wilful misconduct (<em>dolo</em>) or where the law does not allow liability to be limited.</p>
+<p>14.4 The Customer shall indemnify Hexxa, the Supplier and the Holder against claims, fines and costs arising from the use of the Block by the Customer or its users, or from breach of this Agreement.</p>
+<p>14.5 The Customer acknowledges that the price reflects this allocation of risk.</p>
+<h3 id="terms-15-customer-representations">15. Customer representations</h3>
+<p>15.1 The Customer represents that:</p>
+<ul><li>(a) it is duly existing and the signatory has authority to contract;</li><li>(b) the Authorized ASN is its own or under its legitimate control;</li><li>(c) the KYC information is true;</li><li>(d) neither it nor its shareholders, directors or beneficial owners are targets of sanctions, and it is not established in, nor acting on behalf of persons in, the countries and regions of clause 16;</li><li>(e) it will use the Block only for the use declared in the SO.</li></ul>
+<p>15.2 Except as expressly provided in this Agreement, the Service is provided "as is", without other warranties.</p>
+<h3 id="terms-16-sanctions-and-restricted-countries">16. Sanctions and restricted countries</h3>
+<p>16.1 Hexxa does not contract with persons established in, resident in or acting on behalf of persons in Russia, Belarus, Iran, North Korea, Syria, Cuba or the occupied regions of Ukraine (Crimea, Sevastopol, the so-called Donetsk and Luhansk People's Republics, and the occupied areas of Zaporizhzhia and Kherson). Nor does it contract with persons listed under UN, US (OFAC) or European Union sanctions, or with entities they control, or for use of the Block in those territories. Hexxa may update this list according to law and the Supplier's requirements.</p>
+<p>16.2 In such cases, Hexxa may suspend and terminate immediately. Any pro rata refund will be made only if and when permitted by the applicable sanctions law.</p>
+<h3 id="terms-17-personal-data-protection">17. Personal data protection</h3>
+<p>17.1 Each party is the controller of the personal data it processes. Hexxa processes data of the Customer's representatives and contacts (name, position, e-mail and phone) to perform the Agreement, carry out KYC, comply with legal obligations, prevent fraud and abuse and exercise its rights, under the Brazilian General Data Protection Law (Law 13,709/2018, "<strong>LGPD</strong>") and the Privacy Policy published on this page.</p>
+<p>17.2 This data may be shared with the Supplier, the Holder, the RIR (including publication of the abuse contact in WHOIS), the payment processor (Stripe) and KYC and sanctions-screening providers. Some of them are located abroad. International transfers will follow the LGPD rules.</p>
+<p>17.3 The Customer should prefer role addresses (such as abuse@ and noc@) and warrants that it may share its representatives' data.</p>
+<p>17.4 Data is kept during the Agreement and for 5 years after termination, to comply with legal obligations and exercise rights, unless a longer legal period applies.</p>
+<p>17.5 Channel for data subjects (LGPD art. 41): <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a>.</p>
+<h3 id="terms-18-confidentiality">18. Confidentiality</h3>
+<p>18.1 The following are confidential during the Agreement and for 2 years after termination: price, commercial terms, the identity of the Supplier and the Holder where not public, and the other party's non-public technical information.</p>
+<p>18.2 Confidentiality does not prevent disclosure required by law, an authority or the RIR, or sharing with the Supplier and the Holder to the extent needed for the Service.</p>
+<h3 id="terms-19-notices">19. Notices</h3>
+<p>19.1 Notices are given by e-mail to the addresses in the SO. To Hexxa: <a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a>; abuse reports: <a href="mailto:abuse@hexxacrm.com">abuse@hexxacrm.com</a>. A notice is deemed received when sent, unless a delivery failure notice is received.</p>
+<p>19.2 Abuse and suspension notices are also sent to the Customer's abuse contact.</p>
+<h3 id="terms-20-changes-to-these-terms">20. Changes to these Terms</h3>
+<p>20.1 Hexxa may change these Terms or the AUP with 30 days' notice. The change applies from the next renewal, and the Customer may cancel before it at no cost.</p>
+<p>20.2 Changes required by the Supplier, the RIR, the law or an authority may apply within a shorter period, stated in the notice.</p>
+<h3 id="terms-21-general-provisions">21. General provisions</h3>
+<p>21.1 <strong>Order of precedence.</strong> In case of conflict: (a) the AUP prevails on permitted use; (b) the SO prevails on price, quantity, Cycle and special conditions; (c) these Terms prevail in all other matters.</p>
+<p>21.2 <strong>Assignment.</strong> The Customer may not assign the Agreement without Hexxa's written consent. Hexxa may assign it to a successor or a group company, with notice to the Customer.</p>
+<p>21.3 <strong>Force majeure.</strong> Neither party is liable for delays caused by force majeure or acts of God; this does not excuse payment of amounts due.</p>
+<p>21.4 Tolerance is not novation or waiver. The invalidity of one clause does not affect the others. The parties are independent, with no corporate, employment or agency relationship.</p>
+<p>21.5 <strong>Language.</strong> These Terms exist in Portuguese and English. In case of conflict, the Portuguese version prevails, and for Customers established in Brazil this rule applies without exception.</p>
+<h3 id="terms-22-governing-law-and-jurisdiction">22. Governing law and jurisdiction</h3>
+<p>22.1 The Agreement is governed by the laws of the Federative Republic of Brazil.</p>
+<p>22.2 The courts of the City of São Paulo, State of São Paulo, Brazil, have exclusive jurisdiction, and the parties waive any other, however privileged.</p>
+<hr>
+<h2 id="terms-annex-i-service-order-template">Annex I — Service Order (template)</h2>
+<p><strong>SO no. [YYYY-NNNN]</strong> · Issued on [YYYY-MM-DD] · Linked to Terms of Service version 1.0 and AUP version 1.0</p>
+<h4 id="terms-a-customer">A. Customer</h4>
+<div class="tabela"><table><thead><tr><th>Field</th><th>Entry</th></tr></thead><tbody><tr><td>Company name</td><td>[COMPANY NAME]</td></tr><tr><td>CNPJ or foreign registration</td><td>[CNPJ / REGISTRATION NO. AND COUNTRY]</td></tr><tr><td>Registered address</td><td>[ADDRESS, CITY, STATE, COUNTRY]</td></tr><tr><td>Signatory (name and position)</td><td>[NAME], [POSITION]</td></tr><tr><td>Signatory e-mail</td><td>[CORPORATE E-MAIL]</td></tr><tr><td>Technical contact (NOC)</td><td>[noc@domain], [PHONE]</td></tr><tr><td>Billing contact</td><td>[billing@domain]</td></tr><tr><td>Abuse contact (published in WHOIS)</td><td>[abuse@domain]</td></tr></tbody></table></div>
+<h4 id="terms-b-service">B. Service</h4>
+<div class="tabela"><table><thead><tr><th>Field</th><th>Entry</th></tr></thead><tbody><tr><td>Authorized ASN</td><td>AS[NUMBER]</td></tr><tr><td>Customer upstream(s)</td><td>AS[NUMBER] [NAME]; AS[NUMBER] [NAME]</td></tr><tr><td>Size and quantity</td><td>☐ /24 · ☐ /23 · ☐ /22 · Quantity: [N]</td></tr><tr><td>Source RIR</td><td>☐ ARIN · ☐ RIPE NCC · ☐ APNIC · ☐ other: ☐</td></tr><tr><td>Intended announcements</td><td>[e.g. whole /22 and/or specific /24s], to define the ROA</td></tr><tr><td>Desired geolocation (not guaranteed)</td><td>[COUNTRY / STATE / CITY]</td></tr><tr><td>Reverse DNS</td><td>☐ No · ☐ Yes, delegate to: [ns1.domain], [ns2.domain]</td></tr><tr><td>Intended use</td><td>☐ Internet access (ISP) · ☐ Hosting/data center · ☐ Corporate network · ☐ Own CDN/anycast · ☐ Other: [DESCRIBE]</td></tr><tr><td>Description of use</td><td>[FREE TEXT]</td></tr><tr><td>Assigned Block</td><td>Stated in the Delivery Kit, which becomes part of this SO</td></tr></tbody></table></div>
+<h4 id="terms-c-commercial-terms">C. Commercial terms</h4>
+<div class="tabela"><table><thead><tr><th>Field</th><th>Entry</th></tr></thead><tbody><tr><td>Currency</td><td>☐ BRL, with exchange-rate adjustment (clause 8.3) · ☐ USD</td></tr><tr><td>Base Price per block/month</td><td>US$ [AMOUNT] per /24/23/22</td></tr><tr><td>Cycle</td><td>☐ Monthly · ☐ Quarterly ([X]% off) · ☐ Semi-annual ([X]% off) · ☐ Annual ([X]% off)</td></tr><tr><td>Cycle amount</td><td>[AMOUNT] (in BRL, at the PTAX rate of each invoice's issue date)</td></tr><tr><td>Payment method</td><td>☐ Card · ☐ Pix · ☐ Boleto (via Stripe)</td></tr><tr><td>Grace period before Technical Suspension</td><td>7 calendar days</td></tr><tr><td>Termination for non-payment</td><td>21 calendar days after the due date</td></tr><tr><td>Withdrawal Period on termination</td><td>3 calendar days</td></tr><tr><td>Lists covered by clause 11.2</td><td>Spamhaus SBL, Spamhaus DROP</td></tr><tr><td>Special conditions</td><td>[NONE / DESCRIBE]</td></tr><tr><td>LACNIC conditions (if applicable)</td><td>LACNIC-origin Block: Customer holds its own ASN and IPv6; further sub-assignment prohibited; other LACNIC policy conditions</td></tr></tbody></table></div>
+<h4 id="terms-d-representations-at-acceptance-mandatory-checkboxes-at-checkout">D. Representations at acceptance (mandatory checkboxes at checkout)</h4>
+<ul><li>☐ I have read and accept the Terms of Service version 1.0 and the Acceptable Use Policy version 1.0.</li><li>☐ I have authority to contract on behalf of the Customer.</li><li>☐ The ASN provided belongs to the Customer, which will not re-lease, resell or assign the Block to third parties.</li><li>☐ The Customer, its shareholders and directors are not targets of sanctions, and the Customer is not established in, nor acting on behalf of persons in, the restricted countries and regions.</li></ul>
+<h4 id="terms-e-acceptance-record-filled-in-by-the-system">E. Acceptance record (filled in by the system)</h4>
+<div class="tabela"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Date and time (UTC)</td><td>[YYYY-MM-DD hh:mm:ss]</td></tr><tr><td>IP address and browser (user agent)</td><td>[IP] · [USER AGENT]</td></tr><tr><td>E-mail of the accepting user</td><td>[E-MAIL]</td></tr><tr><td>SHA-256 hash of accepted documents</td><td>[TERMS HASH] · [AUP HASH] · [SO HASH]</td></tr><tr><td>Stripe checkout session</td><td>[SESSION ID]</td></tr></tbody></table></div></section><section><h2 id="aup">Acceptable Use Policy (AUP)</h2>
+<p><strong>HEXXA LTDA</strong> · Version 1.0 · Effective from 2026-10-28</p>
+<blockquote><p><strong>Language.</strong> This is the English version of the <em>Política de Uso Aceitável</em>. In case of any conflict between versions, the Portuguese version prevails. For Customers established in Brazil, this rule applies without exception.</p></blockquote>
+<h3 id="aup-1-purpose-and-scope">1. Purpose and scope</h3>
+<p>1.1 This Policy sets out how the Customer may use the IPv4 blocks provided by Hexxa (the "<strong>Block</strong>"). It is part of the Terms of Service – IPv4 Address Lease (the "<strong>Terms</strong>"), and capitalized terms have the meaning given in the Terms.</p>
+<p>1.2 The Policy applies to the Customer and to everyone who uses the Block through it: employees, customers, end users and service providers. The Customer is responsible for the use of the Block by all of them.</p>
+<p>1.3 The Policy incorporates the requirements of the Supplier and the Holder. Additional requirements specific to a Block will be notified in writing and become part of the Service Order.</p>
+<h3 id="aup-2-permitted-uses">2. Permitted uses</h3>
+<p>2.1 The Block may be used for lawful activities consistent with the use declared in the Service Order, for example:</p>
+<ul><li>(a) internet access for ISP subscribers, including CGNAT;</li><li>(b) hosting, dedicated servers, VPS and colocation for identified customers;</li><li>(c) corporate networks, own services and company applications;</li><li>(d) own CDN, anycast and DNS infrastructure;</li><li>(e) own, transactional or consented e-mail, with SPF, DKIM and DMARC configured.</li></ul>
+<h3 id="aup-3-prohibited-uses">3. Prohibited uses</h3>
+<p>3.1 The Block may not be used, directly or indirectly, for:</p>
+<ul><li>(a) <strong>spam</strong>: unsolicited bulk e-mail, purchased or harvested lists, or sending without an unsubscribe mechanism;</li><li>(b) <strong>residential, "ISP", mobile or rotating proxies</strong>, or any service that exposes the Block as an exit point for traffic of unidentified third parties;</li><li>(c) <strong>public VPNs used for abuse</strong>, or VPNs without abuse handling;</li><li>(d) <strong>scanning and attacks</strong>: port or vulnerability scanning of third-party networks without authorization, brute force, credential stuffing, denial of service (DoS/DDoS) and exploitation of vulnerabilities;</li><li>(e) <strong>malware</strong>: hosting, distributing or controlling viruses, ransomware, botnets and similar;</li><li>(f) <strong>phishing</strong> and fraudulent pages impersonating third parties;</li><li>(g) <strong>command-and-control (C2) servers</strong> for botnets or malware;</li><li>(h) <strong>illegal content</strong>, including child sexual abuse material, which will be reported to the authorities;</li><li>(i) <strong>fraud</strong>: click or ad fraud, mass creation of fake accounts, card fraud and bots to bypass platform limits;</li><li>(j) infringement of intellectual property rights, such as piracy;</li><li>(k) <strong>evading economic sanctions</strong> or export restrictions, or giving access to the Block to persons or territories restricted under the Terms;</li><li>(l) <strong>spoofing source IP addresses</strong> or announcing third-party prefixes without authorization (route hijacking);</li><li>(m) <strong>re-leasing, subleasing, reselling or assigning the Block</strong>, or allowing another ASN to announce it, under clause 6.2 of the Terms;</li><li>(n) any activity that is illegal in Brazil or in the country where the Block is used.</li></ul>
+<h3 id="aup-4-uses-requiring-prior-written-authorization">4. Uses requiring prior written authorization</h3>
+<p>4.1 The uses below are only allowed with Hexxa's prior written authorization, which may be refused or made subject to conditions (such as KYC of end users, volume limits and abuse handling):</p>
+<ul><li>(a) commercial VPN offered to the public;</li><li>(b) datacenter proxies offered to third parties;</li><li>(c) Tor exit nodes;</li><li>(d) bulk marketing e-mail, even with consent;</li><li>(e) internet-wide scanning for research or security, with public identification and an opt-out;</li><li>(f) large-scale automated data collection (scraping).</li></ul>
+<h3 id="aup-5-serious-abuse-immediate-suspension">5. Serious abuse: immediate suspension</h3>
+<p>5.1 Hexxa may suspend the Service <strong>immediately, without prior notice</strong>, in case of:</p>
+<ul><li>(a) active malware, phishing or C2 servers;</li><li>(b) a denial-of-service attack originating from the Block;</li><li>(c) bulk spam causing the listing of the Block or the ASN;</li><li>(d) child sexual abuse material;</li><li>(e) route hijacking or spoofing;</li><li>(f) indications of sanctions or use in a restricted territory;</li><li>(g) an order of a court, an authority, the RIR, the Supplier or the Holder;</li><li>(h) imminent risk to the Block's reputation or to the continuity of Hexxa's agreement with the Supplier.</li></ul>
+<h3 id="aup-6-technical-obligations">6. Technical obligations</h3>
+<p>6.1 The Customer shall:</p>
+<ul><li>(a) announce the Block only from the Authorized ASN, in prefixes consistent with the ROA;</li><li>(b) apply source address anti-spoofing filters in its network (BCP 38, RFC 2827);</li><li>(c) fix, after notice, open services used in amplification attacks (such as open recursive DNS, NTP, SSDP and memcached);</li><li>(d) keep a working role-based abuse contact (such as abuse@domain), monitored every day, including weekends;</li><li>(e) keep records sufficient to identify, to the extent permitted by law, which customer or user was using an address at a given time;</li><li>(f) comply with applicable law, including, where applicable, the retention of connection logs required by the Brazilian <em>Marco Civil da Internet</em> (Law 12,965/2014).</li></ul>
+<h3 id="aup-7-abuse-report-handling">7. Abuse report handling</h3>
+<p>7.1 Hexxa forwards abuse reports about the Block to the Customer's abuse contact.</p>
+<p>7.2 Customer deadlines:</p>
+<ul><li>(a) <strong>acknowledgement within 24 hours</strong>;</li><li>(b) <strong>resolution, or a reasoned response explaining why the report is unfounded, within 48 hours</strong>;</li><li>(c) for serious abuse, action to stop the abuse <strong>within 4 hours</strong>, without prejudice to immediate suspension.</li></ul>
+<p>7.3 The response must state the cause, the measures taken and the actions to prevent recurrence. Hexxa may request evidence.</p>
+<p>7.4 Recurring reports: 3 valid reports within 30 days, or repeated reports about the same end user, allow Hexxa to require a remediation plan and, if it is not followed, to suspend the Service.</p>
+<h3 id="aup-8-measures">8. Measures</h3>
+<p>8.1 Depending on severity and recurrence, Hexxa may: (a) issue a warning; (b) require remedy within a set deadline; (c) apply Technical Suspension; (d) terminate the Service Order.</p>
+<p>8.2 These measures do not give rise to a refund when the breach is by the Customer or its users, under clause 10.4(b) of the Terms.</p>
+<p>8.3 The Customer bears the costs that the breach causes to Hexxa, the Supplier or the Holder, including blocklist removal.</p>
+<h3 id="aup-9-blocklists">9. Blocklists</h3>
+<p>9.1 If the Block or the Customer's ASN is listed because of use by the Customer or its users, the Customer must fix the cause and request removal, following each list's process.</p>
+<p>9.2 Hexxa does not pay express delisting fees for listings caused by the Customer's use.</p>
+<h3 id="aup-10-cooperation-with-authorities-and-third-parties">10. Cooperation with authorities and third parties</h3>
+<p>10.1 Hexxa does not monitor the Customer's traffic. It may, however, receive and forward abuse reports and consult public reputation sources.</p>
+<p>10.2 Hexxa complies with court orders and lawful requests from authorities and may share the necessary information with them, the Supplier, the Holder and the RIR, within the limits of the law and the LGPD (Law 13,709/2018).</p>
+<h3 id="aup-11-how-to-report-abuse">11. How to report abuse</h3>
+<p>11.1 Send reports to <strong><a href="mailto:abuse@hexxacrm.com">abuse@hexxacrm.com</a></strong>, including: IP address, date and time with time zone, type of abuse and evidence (such as full e-mail headers or logs).</p>
+<h3 id="aup-12-changes">12. Changes</h3>
+<p>12.1 Hexxa may change this Policy under clause 20 of the Terms. Changes required by the Supplier, the Holder, the RIR or the law may apply within a shorter period, stated in the notice.</p></section><section><h2 id="privacy">Privacy Policy</h2>
+<p><strong>HEXXA LTDA</strong> · Version 1.0 · Effective from 2026-10-28</p>
+<blockquote><p><strong>Language.</strong> This is the English version of the <em>Política de Privacidade</em>. In case of any conflict, the Portuguese version prevails.</p></blockquote>
+<h3 id="privacy-1-who-we-are">1. Who we are</h3>
+<p>1.1 <strong>HEXXA LTDA</strong>, CNPJ 63.048.597/0001-64, Rua Pais Leme, 215, conj. 1713, Pinheiros, São Paulo/SP, CEP 05424-150, Brazil ("<strong>Hexxa</strong>"), is the controller of the personal data described in this Policy, under the Brazilian General Data Protection Law (Law 13,709/2018, "<strong>LGPD</strong>").</p>
+<h3 id="privacy-2-what-data-we-process-and-why">2. What data we process and why</h3>
+<p>2.1 <strong>Customers and prospective customers:</strong> name, position, e-mail and phone of representatives and contacts (technical, billing and abuse), company registration data and technical data (ASN, prefixes, declared use). Purposes: sending quotes, customer verification (KYC), performing the agreement, billing, legal compliance and fraud and abuse prevention. Legal bases: pre-contractual steps and performance of contract, legal obligation, exercise of rights and legitimate interest (LGPD art. 7, II, V, VI and IX).</p>
+<p>2.2 <strong>Business contacts:</strong> professional data from public sources (RIR WHOIS/RDAP records, PeeringDB, company websites and public registries), used to offer our services to companies in the sector. Legal basis: legitimate interest (art. 7, IX). Business contact by e-mail and phone may be made with the help of automated systems, including an AI assistant.</p>
+<p>2.3 <strong>Payments:</strong> payment data is processed directly by Stripe. Hexxa does not store card data.</p>
+<h3 id="privacy-3-sharing">3. Sharing</h3>
+<p>3.1 We share data only as needed with: the Supplier and Holder of the Block and the regional internet registry (including publication of the abuse contact in WHOIS/RDAP); the payment processor (Stripe); infrastructure providers (cloud hosting, e-mail, telephony and AI processing); KYC and sanctions-screening providers; and authorities, when required by law.</p>
+<p>3.2 Some of these providers are located outside Brazil. International transfers follow the LGPD rules (art. 33).</p>
+<h3 id="privacy-4-retention">4. Retention</h3>
+<p>4.1 Customer data: during the agreement and for 5 years after termination, unless a longer legal period applies. Business contacts (item 2.2): until the data subject objects, or up to 2 years without interaction; do-not-contact requests are kept so that no further contact is made.</p>
+<h3 id="privacy-5-your-rights">5. Your rights</h3>
+<p>5.1 Data subjects may request confirmation, access, correction, anonymization, blocking or deletion, portability, information on sharing, review of automated decisions, and may object to processing (LGPD art. 18), through <strong><a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a></strong>. To stop receiving business contacts, simply reply to any e-mail asking to be removed, or say so during the call.</p>
+<p>5.2 Data subjects may also lodge a complaint with the Brazilian Data Protection Authority (ANPD).</p>
+<h3 id="privacy-6-security-and-changes">6. Security and changes</h3>
+<p>6.1 We apply reasonable technical and administrative measures to protect data, such as access control and storing credentials in a secrets vault. This Policy may be updated; the current version is always on this page.</p></section>
+</main>
+<footer>HEXXA LTDA · CNPJ 63.048.597/0001-64 · Rua Pais Leme, 215, conj. 1713 · Pinheiros · São Paulo/SP · CEP 05424-150 · Brasil<br><a href="mailto:comercial@hexxacrm.com">comercial@hexxacrm.com</a> · abuso: <a href="mailto:abuse@hexxacrm.com">abuse@hexxacrm.com</a> · <a href="https://hexxacrm.com">hexxacrm.com</a></footer>
+</body>
+</html>
